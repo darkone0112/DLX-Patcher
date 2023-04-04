@@ -1,0 +1,1 @@
+1.	C:\Program Files (x86)\Java\jre6\bin\javaws.exe -Xmx256M http://bratislava01p.logistics.corp/

@@ -1,0 +1,36 @@
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+
+public class OpenWebPage {
+    public static void main(String[] args) {
+        // check which version of Java is being used
+        String javaVersion = System.getProperty("java.version");
+        
+        // give the user two options based on the Java version
+        if (javaVersion.startsWith("1.8")) {
+            openWebPageForJava8();
+        } else {
+            openWebPageForJava11();
+        }
+    }
+    
+    // method for opening a webpage using Java 8
+    private static void openWebPageForJava8() {
+        try {
+            Desktop.getDesktop().browse(new URI("https://www.example.com"));
+        } catch (IOException | URISyntaxException e) {
+            e.printStackTrace();
+        }
+    }
+    
+    // method for opening a webpage using Java 11
+    private static void openWebPageForJava11() {
+        try {
+            Runtime.getRuntime().exec("rundll32 url.dll,FileProtocolHandler https://www.example.com");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
