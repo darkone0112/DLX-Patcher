@@ -10,7 +10,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-public class OpenWebPagesGUI {
+public class DlxPatcher {
     private static final String JAVA6_PORTABLE_PATH = "C:/Java6Portable/App/Java/jre";
     private static final String[] WEBSITE_URLS = {"https://www.example.com", "https://www.google.com"};
     
