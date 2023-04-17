@@ -8,12 +8,12 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class DlxPatcher {
-    private static final String JAVA6_PORTABLE_PATH = "C:/Users/menendezj/Documents/jre1.5.0_05";
-    private static final String[] WEBSITE_URLS = {"http://bratislava01p.logistics.corp/", "http://glpdvlapp465.logistics.corp/#"};
+/*     private static final String JAVA6_PORTABLE_PATH = "C:/Users/menendezj/Documents/jre1.5.0_05";
+ */    private static final String[] WEBSITE_URLS = {"http://bratislava01p.logistics.corp/", "http://glpdvlapp465.logistics.corp/#"};
     
     public static void main(String[] args) {
         // set the path to the Java 6 portable installation directory
-        System.setProperty("java.home", JAVA6_PORTABLE_PATH);
+        /* System.setProperty("java.home", JAVA6_PORTABLE_PATH); */
         
         // create a new JFrame and JPanel
         JFrame frame = new JFrame("Open Web Pages");
